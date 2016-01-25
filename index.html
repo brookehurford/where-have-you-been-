@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Where have you been?</title>
+  </head>
+  <div class="container">
+      <h1>Where have you been?</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a place that you've been:</h2>
+          <form id="new-place">
+            <div class="form-group">
+              <label for="new-location-city">What city did you visit?</label>
+              <input type="text" class="form-control" id="new-location-city">
+            </div>
+            <div class="form-group">
+              <label for="new-location-country">What country is it in?</label>
+              <input type="text" class="form-control" id="new-location-country">
+            </div>
+            <div class="form-group">
+              <label for="new-landmark">What was your favorite landmark?</label>
+              <input type="text" class="form-control" id="new-landmark">
+            </div>
+            <div class="form-group">
+              <label for="new-timeOfYear">What time of year was it?</label>
+              <input type="text" class="form-control" id="new-timeOfYear">
+            </div>
+            <div class="form-group">
+              <label for="new-note">Write a note about it!</label>
+              <input type="text" class="form-control" id="new-note">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Places:</h2>
+          <ul id="places">
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="show-place">
+          <h2></h2>
+
+          <p>Location: <span class="City"></span><span class="Country"></span></p>
+          <p>Landmarks: <span class="landmarks"></span></p>
+          <p>Time of Year: <span class="timeOfYear"></span></p>
+          <p>Notes: <span class="notes"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
